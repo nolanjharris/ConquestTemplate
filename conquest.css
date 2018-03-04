@@ -1,5 +1,6 @@
 body {
 	margin: 0;
+	padding-top: 80px;
 	padding: 0;
 	font-family: sans-serif;
 }
@@ -57,12 +58,13 @@ body {
 	background-color: #737373;
 }
 
-#menu li.active{
+#menu li a.active{
 	background-color: #737373;
 }
 
-#header {
+.header {
 	margin-top: 80px;
+	margin-bottom: 0;
 	height: 550px;
 }
 
@@ -100,6 +102,7 @@ body {
 	width: 100%;
 	background-color: #fff;
 	padding-top: 50px;
+	margin-top: 30px;
 	margin: 0 auto;
 	text-align: center;
 
@@ -277,7 +280,7 @@ img {
 	line-height: 1.5em;
 }
 
-#services {
+.services {
 	height: 350px;
 	width: 100%;
 	margin-top: 50px;
@@ -325,7 +328,7 @@ img {
 	margin: 0 auto;
 	text-align: center;
 	padding-bottom: 0;
-	margin-bottom: 0;
+	margin-top: 50px;
 }
 
 .fourCard {
@@ -405,8 +408,9 @@ img {
 	line-height: 30px;
 }
 
-#contact {
-	margin-top: 50px;
+#contacts {
+	margin-top: 10px;
+	padding-top: 40px;
 	height: 550px;
 	width: 100%;
 }
@@ -543,12 +547,12 @@ form #textarea {
 	font-size: 40px;
 }
 
-#footer #conquest {
+#footer #conquestTemplate{
 	color: #b3b3b3;
 }
 
 #footer hr {
-	margin-top: 50px;
+	/*margin-top: 50px;*/
 	background-color: #cccccc; 
 	height: 1px; 
 	border: 0;

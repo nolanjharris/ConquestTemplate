@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Image Gallery</title>
+	<title>Conquest Template</title>
 	<link rel="stylesheet" type="text/css" href="conquest.css">
 	<script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -15,27 +15,30 @@
 
 		<div id="menu">
 			<ul>
-				<li class="active"><a href="#">Homepage</a></li>
-				<li><a href="#about">About Us</a></li>
-				<li><a href="#services">Services</a></li>
-				<li><a href="#contact">Contact</a></li>
-				<li><a href="">External</a></li>
+				<li><a class="header-marker slide-section active" href="#header">Homepage</a></li>
+				<li><a class="about-marker slide-section" href="#about">About Us</a></li>
+				<li><a class="services-marker slide-section" href="#service">Services</a></li>
+				<li><a class="contact-marker slide-section" href="#contact">Contact</a></li>
+				<li><a href="#">External</a></li>
 				
 			</ul>
 		</div>
 		
 		
-			<div id="header">
+		<section class="header">
+		<a id="header">
 			<div class="backgroundHead">
 				<div class="contentHead">
 					<h1>CONQUEST!</h1>
 					<p>My take on recreating a simple Bootstrap Template</p>
 				</div>
 			</div>
-		</div>
 		</a>
+		</section>
+		
 
 		
+		<section class="about">
 		<a id="about">
 		<div id="threeCardBlock">
 			<div class="threeCard" id="firstCard">
@@ -71,6 +74,7 @@
 			</div>
 		</div>
 		</a>
+		</section>
 		
 		<div id="twoColumns">
 			<div class="column">
@@ -96,7 +100,8 @@
 			</div>
 		</div>
 		
-		<a id="services">
+		<section class="services">
+		<a id="service">
 		<div id="services">
 			<div class="servicesBG">
 				<div id="servicesContent">
@@ -106,6 +111,7 @@
 			</div>
 		</div>
 		</a>
+		</section>
 		
 		<div id="fourCardBlock">
 			<div class="fourCard" id="cardOneOfFour">
@@ -157,8 +163,9 @@
 			</div>
 		</div>
 		
+		<section class="contact">
 		<a id="contact">
-		<div id="contact">
+		<div id="contacts">
 			<div class="contactBG">
 				<div id="contactContent">
 					<p id="contactHeading">Contact Form</p>
@@ -178,10 +185,11 @@
 			</div>
 		</div>
 		</a>
+		</section>
 		
 		<div id="footer">
 			<span><em>Use It Free!</em></span>
-			<p id="conquest"><em>"Conquest is recreated from a template by Templatemo called Conquer.<br>No backlink required to use their layout."</em></p>
+			<p id="conquestTemplate"><em>"Conquest is recreated from a template by Templatemo called Conquer.<br>No backlink required to use their layout."</em></p>
 			<hr>
 			<p id="copyright">Copyright &copy; 2018 Your Company Name | Design: Templatemo</p>
 		</div>
@@ -193,6 +201,6 @@
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
-<script type="text/javascript" src="imagegallery.js"></script>
+<script type="text/javascript" src="conquest.js"></script>
 </body>
 </html>
