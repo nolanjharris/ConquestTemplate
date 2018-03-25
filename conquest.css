@@ -62,10 +62,86 @@ body {
 	background-color: #737373;
 }
 
+@media(max-width: 1000px){
+	#menu {
+		height: 65px;
+	}
+
+	#menu li a {
+		height: 45px;
+		padding: 15px 20px;
+		line-height: 50px;
+		font-size: 18px;
+	}
+
+	#menu ul {
+		margin-top: 7px;
+	}
+
+	.header {
+		margin-top: 65px !important;
+	}
+
+}
+
+@media screen and (max-width: 650px){
+	#menu {
+		height: 50px;
+	}
+
+	#menu li a {
+		height: 30px;
+		padding: 10px 15px;
+		line-height: 35px;
+		font-size: 14px;
+	}
+
+	#menu ul {
+		margin-top: 7px;
+	}
+
+	.header {
+		margin-top: 50px !important;
+	}
+
+	.contentHead {
+		font-size: .8em;
+	}
+}
+
+@media screen and (max-width: 475px){
+	#menu {
+		height: 50px;
+	}
+
+	#menu li a {
+		height: 30px;
+		padding: 10px 5px;
+		line-height: 35px;
+		font-size: 12px;
+	}
+
+	#menu ul {
+		margin-top: 7px;
+	}
+
+	#menu > ul > #external {
+		display: none;
+	}
+
+	.header {
+		margin-top: 50px !important;
+	}
+
+	.contentHead {
+		font-size: .55em;
+	}
+}
+
 .header {
 	margin-top: 80px;
 	margin-bottom: 0;
-	height: 550px;
+	height: 90vh;
 }
 
 .backgroundHead {
@@ -79,26 +155,27 @@ body {
 .contentHead {
 	font-family: sans-serif;
 	position: absolute;
-	height: 550px;
+	height: 90vh;
 	text-align: center;
 	width: 100%;
-	top: 35%;
-	font-size: 40px;
+	top: 40%;
 	color: #fff;
 	text-shadow: 3px 2px 2px rgba(0, 0, 0, 1);
 	z-index: 1;
 }
 
 .contentHead p {
+	font-size: 1.7em;
 	margin-top: 0;
 }
 
-.contentHead h1 {
+.contentHead #h1 {
+	font-size: 5em;
 	margin-bottom: 10px;
 }
 
 #threeCardBlock {
-	height: 560px;
+	height: 90vh;
 	width: 100%;
 	background-color: #fff;
 	padding-top: 50px;
@@ -111,15 +188,15 @@ body {
 .threeCard {
 	background-color: #f1f1f1;
 	width: 30%;
-	height: 520px;
-	margin-left: 10px;
-	margin-right: 10px;
+	height: 80vh;
+	margin-left: 1%;
+	margin-right: 1%;
 	display: inline-block;
 	vertical-align: top;
 }
 
 .thumbnail {
-	height: 230px;
+	height: 35vh;
 }
 
 img {
@@ -129,7 +206,7 @@ img {
 }
 
 .threeCard p {
-	font-size: 1em;
+	font-size: .95em;
 	color: #737373;
 	line-height: 1.5em;
 }
@@ -216,9 +293,62 @@ img {
 	text-align: left;
 }
 
+@media screen and (max-width: 1000px){
+	.threeCard {
+		width: 28vw;
+		font-size: .9em;
+		line-height: 1em;
+	}
+
+}
+
+@media screen and (max-width: 800px){
+	#threeCardBlock {
+		height: 80vh;
+	}
+
+	#firstCard {
+		width: 44vw;
+		height: 75vh;
+		margin-bottom: 20px;
+	}
+
+	#secondCard {
+		width: 44vw;
+		height: 75vh;
+		margin-bottom: 20px;
+	}
+
+	#thirdCard {
+		display: none;
+	}
+
+	.column {
+		font-size: .75em;
+		line-height: .8em;
+		height: 105vh !important;;
+	}
+}
+
+@media screen and (max-width: 550px){
+	#threeCardBlock {
+		height: 150vh;
+	}
+
+	#firstCard {
+		width: 90vw;
+		height: 70vh;
+	}
+
+	#secondCard {
+		width: 90vw;
+		height: 70vh;
+	}
+}
+
 
 #twoColumns {
-	height: 650px;
+	height: 110vh;
 	width: 100%;
 	background-color: #fff;
 	margin: 0 auto;
@@ -227,12 +357,27 @@ img {
 	margin-bottom: 20px;
 }
 
+@media screen and (max-width: 1000px){
+	.column {
+		line-height: .8em;
+	}
+}
 
+@media screen and (max-width: 550px){
+	.column {
+		width: 90vw !important;
+		height: 95vh !important;
+	}
+
+	#twoColumns {
+		height: 190vh !important;
+	}
+}
 
 .column {
 	background-color: #f1f1f1;
 	width: 45%;
-	height: 650px;
+	height: 115vh;
 	margin-left: 1%;
 	margin-right: 1%;
 	margin-bottom: 30px;
@@ -241,7 +386,7 @@ img {
 }
 
 .lgThumbnail {
-	height: 300px;
+	height: 48vh;
 }
 
 #twoColumnButton {
@@ -257,7 +402,7 @@ img {
 	background-color: #fff;
 	border-radius: 10px;
 	border: 1px solid #cccccc;
-	font-size: 1.3em;
+	font-size: 1.2em;
 	float: right;
 	margin-right: 20%;
 	display: block;
@@ -281,7 +426,7 @@ img {
 }
 
 .services {
-	height: 350px;
+	height: 50vh;
 	width: 100%;
 	margin-top: 50px;
 	background-color: #f1f1f1;
@@ -300,7 +445,7 @@ img {
 
 #servicesContent {
 	font-family: sans-serif;
-	height: 350px;
+	height: 50vh;
 	text-align: center;
 	width: 100%;
 	padding-top: 50px;
@@ -321,7 +466,7 @@ img {
 }
 
 #fourCardBlock {
-	height: 550px;
+	height: 90vh;
 	width: 100%;
 	background-color: #fff;
 	padding-top: 50px;
@@ -366,12 +511,40 @@ img {
 	background-color: #e6e6e6;
 }
 
+@media screen and (max-width: 1000px){
+	#fourCardBlock {
+		height: 165vh;
+	}
+
+	.fourCard {
+		width: 45%;
+		margin-top: 20px;
+		height: 450px;
+	}
+}
+
+@media screen and (max-width: 550px){
+	.fourCard {
+		width: 90%;
+	}
+
+	#cardThreeOfFour {
+		display: none;
+	}
+
+	#cardFourOfFour {
+		display: none;
+	}
+}
+
 #bigColumn {
-	height: 800px;
+	height: 125vh;
 	width: 94%;
 	background-color: #f1f1f1;
 	margin: 0 auto;
 	color: #737373;
+	margin-top: 0;
+	font-size: .95em;
 }
 
 #bigColumn h2 {
@@ -379,17 +552,17 @@ img {
 }
 
 #bigColumn p {
-	line-height: 1.5em;
+	line-height: 1.4em;
 }
 
 .bigThumbnail {
-	height: 400px;
+	height: 55vh;
 }
 
 #bigColButton {
 	text-decoration: none;
 	border: 1px solid #b3b3b3;
-	font-size: 1.2em;
+	font-size: 1.1em;
 	padding: 12px 30px;
 	transition: .2 ease-in-out;
 	background-color: #fff;
@@ -404,14 +577,73 @@ img {
 
 #bigColumn .cardInfo {
 	margin: 30px;
-	margin-top: 50px;
-	line-height: 30px;
+	margin-top: 30px;
+	line-height: 22px;
+}
+
+@media screen and (max-width: 1000px){
+	#bigColumn {
+		/*font-size: .9em;*/
+	}
+	#bigColumn .cardInfo {
+		margin: 15px;
+		font-size: 1em
+	}
+}
+
+@media screen and (max-width: 700px){
+	.bigThumbnail {
+		height: 45vh;
+	}
+	#bigColumn {
+		font-size: .9em;
+	}
+}
+
+@media screen and (max-width: 450px){
+	.bigThumbnail {
+		height: 30vh;
+	}
+
+	#bigColumn {
+		font-size: .8em;
+	}
+}
+
+@media screen and (max-width: 650px){
+	#contacts {
+		height: 120vh;
+		padding-top: 10px !important;
+	}
+
+	#contactContent #contactP {
+		display: none !important;
+	}
+
+	form #inputs {
+		width: 90% !important;
+	}
+
+	form #textarea {
+		width: 90% !important;
+		float: left !important;
+	}
+
+	textarea {
+		width: 90% !important;
+		float: left !important;
+		height: 55px !important;
+	}
+
+	form input {
+		width: 90% !important;
+	}
 }
 
 #contacts {
 	margin-top: 10px;
-	padding-top: 40px;
-	height: 550px;
+	padding-top: 30px;
+	height: 95vh;
 	width: 100%;
 }
 
@@ -428,7 +660,7 @@ img {
 
 #contactContent {
 	font-family: sans-serif;
-	height: 350px;
+	height: 40vh;
 	text-align: center;
 	width: 100%;
 	
@@ -438,7 +670,7 @@ img {
 }
 
 #contactContent #contactHeading {
-	font-size: 50px;
+	font-size: 3em;
 	padding-top: 0;
 }
 
@@ -536,7 +768,7 @@ form #textarea {
 
 #footer {
 	margin-top: 50px;
-	height: 200px;
+	height: 30vh;
 	width: 100%;
 	background-color: #fff;
 	text-align: center;
@@ -552,7 +784,6 @@ form #textarea {
 }
 
 #footer hr {
-	/*margin-top: 50px;*/
 	background-color: #cccccc; 
 	height: 1px; 
 	border: 0;
